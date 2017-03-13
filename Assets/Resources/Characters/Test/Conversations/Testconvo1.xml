@@ -36,7 +36,7 @@
 	<id>2</id>
 	<dialog>Not much, you?</dialog>
 	<emotion>happy</emotion>
-	<option1>Well, thanks.</option1>
+	<option1>Not too much, thanks.</option1>
 	<redirect1>1</redirect1>
 	<option2></option2>
 	<redirect2></redirect2>

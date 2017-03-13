@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class ConversationController : MonoBehaviour {
 
+	const int NUMOPTIONS = 4;
+
 	public class ConversationNode
 	{
 		public string dialog;
@@ -18,12 +20,12 @@ public class ConversationController : MonoBehaviour {
 		public ConversationNode(){
 			dialog = "";
 			emotion = "default";
-			optionStrings = new string[4];
-			for (int i = 0; i<4; i++){
+			optionStrings = new string[NUMOPTIONS];
+			for (int i = 0; i<NUMOPTIONS; i++){
 				optionStrings[i] = "";
 			}
-			optionRedirects = new int[4];
-			for (int i = 0; i<4; i++){
+			optionRedirects = new int[NUMOPTIONS];
+			for (int i = 0; i<NUMOPTIONS; i++){
 				optionRedirects[i] = -2;
 			}
 		}
@@ -72,40 +74,17 @@ public class ConversationController : MonoBehaviour {
 									s.emotion = "default";
 								}
 							}
-							if(convonode.Name == "option1") {
-								s.optionStrings[0] = convonode.InnerText;
-							}
-							if(convonode.Name == "option2") {
-								s.optionStrings[1] = convonode.InnerText;
-							}
-							if(convonode.Name == "option3") {
-								s.optionStrings[2] = convonode.InnerText;
-							}
-							if(convonode.Name == "option4") {
-								s.optionStrings[3] = convonode.InnerText;
-							}
-							if(convonode.Name == "redirect1") {
-								string raw = convonode.InnerText;
-								if(raw != ""){
-									s.optionRedirects[0] = int.Parse(raw);
+							for (int i = 0; i < NUMOPTIONS; i++) {
+								if(convonode.Name == "option"+(i+1)) {
+									s.optionStrings[i] = convonode.InnerText;
 								}
 							}
-							if(convonode.Name == "redirect2") {
-								string raw = convonode.InnerText;
-								if(raw != ""){
-									s.optionRedirects[1] = int.Parse(raw);
-								}
-							}
-							if(convonode.Name == "redirect3") {
-								string raw = convonode.InnerText;
-								if(raw != ""){
-									s.optionRedirects[2] = int.Parse(raw);
-								}
-							}
-							if(convonode.Name == "redirect4") {
-								string raw = convonode.InnerText;
-								if(raw != ""){
-									s.optionRedirects[3] = int.Parse(raw);
+
+							for (int i = 0; i < NUMOPTIONS; i++) {
+								if(convonode.Name == "redirect"+(i+1)) {
+									if(convonode.InnerText != ""){
+										s.optionRedirects[i] = int.Parse(convonode.InnerText);
+									}
 								}
 							}
 						}
@@ -158,14 +137,14 @@ public class ConversationController : MonoBehaviour {
 				} else {
 					Debug.Log ("Unable to load character image at " + characterImageFilePath);
 				}
-				for (int option = 0; option < 4; option++) {
+				for (int option = 0; option < NUMOPTIONS; option++) {
 					optionButtons [option].GetComponent<Button> ().interactable = (currentNode.optionRedirects [option] != -2);
 					optionButtons [option].transform.FindChild ("Text").gameObject.GetComponent<Text> ().text = currentNode.optionStrings [option];
 				}
 			}
 		} else {
 			Dialog.GetComponent<Text> ().text = "[END OF CONVERSATION]";
-			for (int option = 0; option < 4; option++) {
+			for (int option = 0; option < NUMOPTIONS; option++) {
 				optionButtons [option].GetComponent<Button> ().interactable = false;
 				optionButtons [option].transform.FindChild ("Text").gameObject.GetComponent<Text> ().text = "";
 				Sprite Image = Resources.Load<Sprite> (characterImageFilePath + "default");

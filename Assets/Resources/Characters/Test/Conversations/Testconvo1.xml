@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document>
+<character_full_name>Testy McTestFace</character_full_name>
+
+<character_reference_name>Test</character_reference_name>
+
+<node>
+	<id>0</id>
+	<dialog>Hi there. I'm Testy.</dialog>
+	<emotion></emotion>
+	<option1>Hi.</option1>
+	<redirect1>1</redirect1>
+	<option2>What's up?</option2>
+	<redirect2>2</redirect2>
+	<option3>You are stupid.</option3>
+	<redirect3>3</redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>1</id>
+	<dialog>This is just some test dialog, but I'm glad you are enjoying it.</dialog>
+	<emotion>happy</emotion>
+	<option1>You Are Dumb.</option1>
+	<redirect1>3</redirect1>
+	<option2>I think I have to go now.</option2>
+	<redirect2>4</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>2</id>
+	<dialog>Not much, you?</dialog>
+	<emotion>happy</emotion>
+	<option1>Well, thanks.</option1>
+	<redirect1>1</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>3</id>
+	<dialog>That's a mean thing to say! I don't want to talk to you anymore!</dialog>
+	<emotion>angry</emotion>
+	<option1>Ok.</option1>
+	<redirect1>-1</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>4</id>
+	<dialog>I'm sorry you have to go, but ok.</dialog>
+	<emotion>sad</emotion>
+	<option1>[LEAVE]</option1>
+	<redirect1>-1</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+</document>

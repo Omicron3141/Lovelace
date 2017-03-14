@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<document>
+<character_full_name>Capt. Liesl Harper-Schulz</character_full_name>
+
+<character_reference_name>Harper</character_reference_name>
+
+<node>
+	<id>0</id>
+	<dialog>Good day, Lieutenant. My name is Captain Harper, I'm your commanding officer. Welcome aboard the Lovelace.</dialog>
+	<emotion></emotion>
+	<option1>Hello Ma'am</option1>
+	<redirect1>1</redirect1>
+	<option2>What's up?</option2>
+	<redirect2>2</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>2</id>
+	<dialog>I don't approve of your informality, Lieutenant. Please take care to address your superior officers with respect in the future.</dialog>
+	<emotion></emotion>
+	<option1>Yes Ma'am</option1>
+	<redirect1>5</redirect1>
+	<option2>Why tho?</option2>
+	<redirect2>3</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>3</id>
+	<dialog>I can see that you're going to be a problem case. Watch your step, Lieutenant. Insubordinate officers rarely last long here</dialog>
+	<emotion>angry</emotion>
+	<option1>Whatever</option1>
+	<redirect1>-1</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>1</id>
+	<dialog>I think we're going to get along well.</dialog>
+	<emotion></emotion>
+	<option1>I hope so</option1>
+	<redirect1>5</redirect1>
+	<option2>Like, totally</option2>
+	<redirect2>2</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>5</id>
+	<dialog>Is there anything I can help you with?</dialog>
+	<emotion></emotion>
+	<option1>I'd like to know more about the Lovelace</option1>
+	<redirect1>6</redirect1>
+	<option2>Tell me more about you</option2>
+	<redirect2>7</redirect2>
+	<option3>Tell me about the insurrection</option3>
+	<redirect3>8</redirect3>
+	<option4>No Ma'am</option4>
+	<redirect4>9</redirect4>	
+</node>
+
+<node>
+	<id>9</id>
+	<dialog>Then I'll let you report to your supervisor. Good day, Lieutenant.</dialog>
+	<emotion></emotion>
+	<option1>Thank you, Ma'am</option1>
+	<redirect1>-1</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>6</id>
+	<dialog>The Lovelace is a Tycho-class deep space survey vessel, operated jointly by the Coalition Interstellar Navy and the Deep Space Exploration Fleet. For the last six months, we've been surveying uninhabited worlds in wild space north of Coalition territory. You've joined us on our way back to Terra Nova.</dialog>
+	<emotion></emotion>
+	<option1>Are research ships normally this well protected?</option1>
+	<redirect1>10</redirect1>
+	<option2>Interesting, thank you.</option2>
+	<redirect2>5</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>10</id>
+	<dialog>No. But that line of questioning is above your security clearance.</dialog>
+	<emotion></emotion>
+	<option1>Sorry, Ma'am</option1>
+	<redirect1>5</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>7</id>
+	<dialog>I'm Captain Harper, and I command this ship. The crew follows my orders precisely, and so we succeed. Everything else is secondary.</dialog>
+	<emotion></emotion>
+	<option1>Of course.</option1>
+	<redirect1>5</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>8</id>
+	<dialog>The "insurrection" are little more than common traitors. They bring disgrace upon themselves and the Fleet.</dialog>
+	<emotion>angry</emotion>
+	<option1>Sorry, I didn't mean to hit a nerve.</option1>
+	<redirect1>11</redirect1>
+	<option2>Ok.</option2>
+	<redirect2>5</redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+<node>
+	<id>11</id>
+	<dialog>No, I apologize, Lieutenant. That was out of line.</dialog>
+	<emotion>emotional</emotion>
+	<option1>...</option1>
+	<redirect1>5</redirect1>
+	<option2></option2>
+	<redirect2></redirect2>
+	<option3></option3>
+	<redirect3></redirect3>
+	<option4></option4>
+	<redirect4></redirect4>	
+</node>
+
+</document>

@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\ConversationController.cs" />
      <Compile Include="Assets\UI\RandomTrackingZRotation.cs" />
+     <None Include="Assets\Resources\Characters\Harper\Conversations\C1.xml" />
      <None Include="Assets\Resources\Characters\Test\Conversations\Testconvo1.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -119,7 +119,7 @@ public class ConversationController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		c = new Conversation ("Characters/Test/Conversations/Testconvo1");
+		c = new Conversation ("Characters/Harper/Conversations/C1");
 		CharacterName.GetComponent<Text>().text = c.characterName;
 		characterImageFilePath = c.characterImageFilePath;
 		SetUpConversationNode (CurrentNode);
@@ -131,11 +131,11 @@ public class ConversationController : MonoBehaviour {
 			ConversationNode currentNode = c.getNode (node);
 			if (currentNode != null) {
 				Dialog.GetComponent<Text> ().text = currentNode.dialog;
-				Sprite Image = Resources.Load<Sprite> (characterImageFilePath + currentNode.emotion);
+				Sprite Image = Resources.Load<Sprite> (characterImageFilePath+ currentNode.emotion);
 				if (Image != null) {
 					CharacterImage.GetComponent<Image> ().sprite = Image;
 				} else {
-					Debug.Log ("Unable to load character image at " + characterImageFilePath);
+					Debug.Log ("Unable to load character image at " + characterImageFilePath+ currentNode.emotion);
 				}
 				for (int option = 0; option < NUMOPTIONS; option++) {
 					optionButtons [option].GetComponent<Button> ().interactable = (currentNode.optionRedirects [option] != -2);
